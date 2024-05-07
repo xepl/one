@@ -1,227 +1,156 @@
 
-# XEPL One C++
+# XEPL Operating Environment C++
 
-Welcome to tomorrow, today.  XEPL is a complete system-in-a-box, a one library does it all.  To simplify your introduction into XEPL, it is broken down into ones.
+XEPL is a software operating environment for applications to use multi-threading on a common world view of data.
 
-Prepare to be Dazzled !
+![Beautiful Multi-Threading](https://xepl.net/images/concept/DALL·E%202024-02-19%2012.43.56.jpg)
 
-- One header
-- One implementation file
-- One line installation
+C++ is the best language, bare none.  Top performance, extensible, flexible, portable, and zero active runtime. XEPL is 100% Pure C++.
 
-Here is intro1.cpp
+![XEPL is C++](https://xepl.net/images/evolution/DALL·E%202024-02-16%2007.30.02.jpg)
 
-```
-#include "xepl.h"
 
-int main ( int, const char**, char** )
-{
-	XEPL::Brain brain ( "Amazing" );
+## Building XEPL
 
-	new int;
+Just as simple as compiling Hello, World!
 
-	std::cout << "Hello, World!\n";
-	std::cout << "XEPL detects leaks\n";
-}
-```
+Be sure that you have a C++ Compiler. XEPL uses C++17.
 
-To build your XEPL Library its as easy as.
+``g++ -std=c++17 intro.cpp``
 
-```
-g++ -std=c++17 xepl.cc -o libXepl.a
-```
+and run
 
-To build your XEPL Application
+``./a.out``
 
-```
-g++ -std=c++17 -L. -lxepl intro1.cpp -o intro1
-```
+## XEPL is Smart
 
-To run your XEPL Application
+Real-time C++ has always been challenged by new/delete.
 
-```
-./intro1
-```
+XEPL is so smart, it recycles memory, avoiding the delete.
 
-Here is the output.
+![Memory Recycler](https://xepl.net/images/dna/DALL·E%202024-04-21%2010.43.58.jpg)
 
-```
-Hello, World!
-XEPL detects leaks
-Other news 6 deletes 5
- ---LEAKING new/delete: 1
-Started at: Fri Sep 15 11:20:07 2023
-Elapsed time: 00:00:00.000
-```
 
-There is a lot going on there.  And, That is just a taste.  It doesn't get any harder than that; it just keeps getting better.
+XEPL uses a per-thread backpack to recycle previous allocations to deliver non-blocking dynamic memory.
 
----
+![One world view](https://xepl.net/images/cortex/DALL·E%202024-04-23%2008.59.39.jpg)
 
-> **This is not the main XEPL Project**.  This is XEPL One. THE FLAGSHIP! This unique seed can be licensed for many different purposes.
+Neurons are for processing DNA, and DNA is a Data Structure composed of cross connected Genes of DNA, offering a three dimensional, instant access no schema database.
 
->> Over at XEPL.Tech, collectively, we are building the future of XEPL.
+![Neuron processing DNA](https://xepl.net/images/dna/DALL·E%202024-04-21%2010.49.11.jpg)
 
->>> There we will ALL share.  The DAZL makes it so.
+Together, DNA powers Neurons to use DNA as source structures with the instructions to build and refine neuron networks that signal and all co-operate on a common world view of data.
 
->>>> Join the conversation ... Join https://XEPL.Tech.
+![DNA as Code](https://xepl.net/images/dna/DALL·E%202024-05-02%2012.33.22.jpg)
 
----
+## What is XEPL
 
-## Description
+Never before, has anyone, gone back this far and challenged the rationale, that a distributed system ... need, in any way ... be limited. 
 
-XEPL is software: computer source code in ASCII C++ that offers a complete execution environment to anyone and everyone.
+![Thinking about software](https://xepl.net/images/skeletons/DALL·E%202024-03-01%2016.40.03.jpg)
 
-XEPL isn't complex, but it's a powerful, general-purpose software system that approaches multi-core hardware in a unique way.
+Multi-threading was hard when programming was young, and honestly, we were scared.  Scared that any error in any piece of code ... could crash everything.
 
-Oh, and let's not forget—XEPL is easy. So easy, in fact, that even a novice programmer can start doing amazing things with their computer. (P.S., that's how I got my start—just playing around with it.)
+![First Personal Computers](https://xepl.net/images/oldschool/DALL·E%202024-03-10%2013.06.52.jpg)
 
-Listen up, everyone: this is the dawn of a new software era. You're as clued in as anyone right now.
+When Multi-Cores arrived, the walled in process dominated.  and developers where barely able to scratch the surface of what is available.
 
-> Yeah, we absolutely learn by doing!
+![Early Multi-Tasking](https://xepl.net/images/oldschool/DALL·E%202024-03-10%2013.04.14.jpg)
 
-Guess what? Everyone's a beginner when it comes to XEPL. Even me. Sure, I wrote the Brain, but that doesn't mean I understand how to think like one. And considering XEPL's infinite possibilities, we're all just getting started.
+## XEPL Breakthrough
 
-I'm certain you'll encounter new ideas, insights, and revelations almost daily. I know I do.
+Multi-Core, Multi-Threading isn't hard.  Doing it in a general purpose OS is nearly impossible, but doing it in an app specific OE ... Hmmm.
 
-> What a thrilling time to be alive!
+![Rethinking Multi-Threading](https://xepl.net/images/oldschool/DALL·E%202024-02-16%2004.34.38.jpg)
 
->> Say goodbye to that dull software.
+Today, Software comes in many forms ... most of them ... huge. Since the years of the first multi-core chips ... software has lagged and lost focus, struggling to gain power.
 
->>> Become part of something way bigger.
+![OS Struggling with clones](https://xepl.net/images/games/DALL·E%202024-04-23%2009.35.06.jpg)
 
-## Growing Forward
+Operating Systems grew inwards to tackle the latest hardware and cores, and upwards to handle interconnected clouds.
 
-XEPL is a software architecture inspired by neuroscience terminology. Go ahead, look up terms like Cell, Nucleus, Neuron, Axon, Synapse, DNA, and RNA for some approximate context. 
+![Software is Big Business](https://xepl.net/images/yesterday/DALL·E%202024-02-27%2008.02.47.jpg)
 
-> Ah, the greatest challenge in software? Grasping the mindset of the programmers who came before us.
+Software Frameworks conquered core business functionality, and micro-services encouraged a distributed network.  Everything seems peachy.
 
-> Sure, we all went to school—not just to learn how to program (you can do that here)—but to learn the *vocabulary*. The lingo of the programmers from back in the day.
+![Consumer Delight](https://xepl.net/images/evolution/DALL·E%202024-02-16%2007.28.25.jpg)
 
-> Here's the kicker: XEPL is brand new. My terminology mimics the Brain, so don't expect to find a course on it at your local university. Get ready to multitask your learning. After all, XEPL is about many-to-many relationships in numerous ways.
+All of that is good stuff ... but, what about the multi-core processor.  What about in-process, in memory Parallel & Concurrent access to data structures share with other cores. Who solved that ? Dijkstra, Hoare, Wirth, Hewitt ? ...  They were all right !
 
-> Where does it all begin? With a seed. This is my seed, my one-to-many gift to the world of programming.
+![See what you've been missing](https://xepl.net/images/dna/DALL·E%202024-02-16%2012.32.00.jpg)
 
-I've done some cool stuff, let me tell you. I integrated dynamic connections into a multi-threaded memory recycler. Transformed linear RAM into an in-memory, forest-like database. Moved those nitty-gritty C++ details into a section I call the Cortex. Oh, and I whipped up a robust RNA scripting language that's embedded everywhere in the system. You get to write or select your XML keywords and Trait operators, and then you wire up your Cortex using XML.
+XEPL is laser focused on one thing ... delivering the perfect Operating Environment experience for Software Developers ... by solving the hard problems that software developers need solving, and then getting out of the way.
 
-Within XEPL's XML framework, you can connect Neurons to Neurons and Genes to Genes. You can craft new Methods and Macros, generate renderings, and send Signals zooming along Axons. Your Genes can even self-evaluate and trigger themselves along those Axons. And yes, you guessed it, it's all in XML.
+![Cortex processing DNA building Cortex](https://xepl.net/images/dna_cortex/DALL·E%202024-04-23%2009.07.25.jpg)
 
-> Quick note: XEPL's C++ isn't your grandparent's C++.
-- No #defines, 
-- no (Type& parameters), and definitely 
-- no template\<Bloat\>.
+The XEPL Operating Environment is for Neurons to work together on a common view of the world.  To process signals their interested in, and to generate signals others might be interested.  DNA is used both as Control and as Data.
 
-> Here's the deal: Use C++ to build small, precise, binary modules. Then watch in awe as XEPL parses its XML, constructs interconnected models with multiple threads, and completes intricate signaling tasks—all before traditional C++ can even start compiling. How's that for turnaround efficiency?
+![Integrated CPU and Neuron processing](https://xepl.net/images/dna_cortex/DALL·E%202024-02-26%2015.05.51.jpg)
 
-## XEPL XML
+As XEPL Neurons process Signals of DNA, they generate fresh Signals that trigger other Neurons to generate more Signals; all working together on a common world view.
 
-XEPL XML? It's not just any XML; it's a game-changer! Each XML record in XEPL holds Methods, Parameters, and Blobs, and can even link to other XML records. Better yet, XEPL XML is accessible concurrently to all threads.  Imagine a playground so adaptive, it can leap from a whisper-quiet computational state into an all-out, multi-core frenzy. And then, as if nothing ever happened, it settles back into its serene setting. 
+![Interconnected Neuron Reactions](https://xepl.net/images/neurons/DALL·E%202024-02-16%2003.19.15.jpg)
 
-In this realm of XEPL XML, the sky's the limit. You can construct robust, intricate structures designed to stand the test of time, operating 24/7 indefinitely. Or, if you're the impatient sort, whip up short-lived processors that zoom through tasks in mere microseconds. But why limit yourself? With XEPL XML, you can—and most likely will—do both. Versatility like you've never seen!
+Alongside all the normal things of an environment, such as Methods, Properties, etc, XEPL provides developers additional state management that is exactly what developers need to distribute, communicate and synchronize effectively.
 
-## XEPL: Where Software Meets Rock 'n' Roll
+![Neuron internal/external state](https://xepl.net/images/neurons/DALL·E%202024-03-24%2014.16.01.jpg)
 
-- Many-to-many data connections
-- Many-to-many processing connections
-- Recursive data
-- Recursive processing
+XEPL is a perfect balance of simplicity, capability, expressibility, changeability, and functionality.
 
-Let's talk multi-core. XEPL harnesses native multi-threading to turn your apps into distributed applications within a single process. Forget serialization, forget request/response, and certainly forget latency. We're talking instant access to all the recursive traits and genes.
+![Perfect State Management](https://xepl.net/images/beauty/DALL·E%202024-05-02%2011.53.48.jpg)
 
-- Single process without external dependencies
-- Multi-threading without the blockade
-- Dynamic loading and unloading of Neurons
+When it comes to building dynamic neuron networks, parsing data, signaling, rendering, and teardown; XEPL does all the heavy lifting you described in XML.
 
-Did I mention the in-memory, cross-connected binary XML database? This natural banyan tree-like lattice structure allows XEPL to tackle large volumes of structured data instantly. Dynamic connections between XML genes further offer the flexibility to adapt to a forever-changing environment and stimuli.
+![XEPL does all the heavy lifting](https://xepl.net/images/dna_cortex/DALL·E%202024-04-24%2013.04.12.jpg)
 
-- Lives purely inside the CPU/RAM
-- Squeezes the most out of multi-core technology
-- Efficiently uses all available memory
-- Operates completely asynchronously
+With XEPL you describe massive networks that come and go ... in an instant.
 
-Let's not overlook the XEPL Neurons—they're downright clever. Designed with recursion and cross-connection in mind, these Neurons can send and receive signals along Axons without breaking a sweat. And it doesn't stop there. The DNA Genes in XEPL have the ability to self-signal changes along those very same Axons.
+![Transforming Neuron Networks](https://xepl.net/images/games/DALL·E%202024-03-10%2012.00.06.jpg)
 
-- Quick compiles to get you moving
-- Even faster execution turnaround
-- Modular design for portable simplicity
-- Designed for Extensibility
+### The Source Code
 
-## What XEPL Definitely Isn't
+C++ is a language of Inheritance.  XEPL makes extreme use of Inheritance; as such, the XEPL Core is implemented in under 5,000 lines of C++ source code.
 
-XEPL is not some simple, single-threaded Python ordeal. Nor is it bogged down by the multi-threaded semaphore complexities of yesteryear. What XEPL is, however, is a dynamic, cross-connected, self-managed data system with context. Forget Python; XEPL is faster, easier, and soon you'll find that XEPL's C++/XML combo will be your one and only development playground.
+![Inherited functionality](https://xepl.net/images/ai_thoughts/DALL·E%202024-03-06%2014.04.23.jpg)
 
-Get started today.
+Using another 5,000 LOC, the XEPL Engine (XE) offers functional Brain.Kits. XEPL is complete and independent of the brain.Kits.
 
-Say adios to:
-- Page faults
-- System calls
-- Message passing
-- Serialization
-- Operational latency
-- And those pesky project delays
+![Application Specific brain.kits](https://xepl.net/images/dna_cortex/DALL·E%202024-05-02%2012.16.29.jpg)
 
-So why wait for tomorrow? With XEPL, the future is already here.
+In contrast, todays 'process' environments strive to provide connections between computers, and pretty much ignore inter thread communications.
 
-## License
+![Massive Data Center](https://xepl.net/images/cortex_machines/DALL·E%202024-02-22%2006.39.50.jpg)
 
-> Licensed under the DAZL License (DAZL–1.0) (the License)
+### Off-process processing
 
-> Obtain the License at https://xepl.net/licenses/dazl–1.0.md
+While there are many libraries that offer off-process stovepipes of functionality, and/or libraries of algorithms to accomplish specific tasks, the tools are segregated from the common world view and need our help to communicate to/fro is via their API.
 
-## Installing a C++ Build System
+![Stovepipe of Functionality](https://xepl.net/images/yesterday/DALL·E%202024-02-27%2007.51.38.jpg)
 
-If you are a programming noob, you will need a C++ build system installed on your machine.
+We, application programmers are relegated to writing glue code to marshal the data in/out of libraries of code.  We package our requests, invoke the API, and unpack the responses.  
 
-This will depend on your particular platform:
+![](https://xepl.net/images/oldschool/DALL·E%202024-03-24%2013.30.39.jpg)
 
-### Optional: Doxygen Installation
+From there, our requests are handled by a software factory.
 
-Doxygen, though not strictly necessary, will prove useful for exploring XEPL.
+![](https://xepl.net/images/oldschool/DALL·E%202024-03-24%2013.28.00.jpg)
 
-## Unleash Your Potential with XEPL
+And they respond, in kind, over the same lines as the API Request.
 
-Contributing to XEPL isn't just a win for technology—it's a win for you. As a DAZL-1.0 Contributor, your smarts supercharge the project and may even carve out a path for you to commercialize your brainchildren. 
+![](https://xepl.net/images/oldschool/DALL·E%202024-03-24%2013.36.19.jpg)
 
-Ready to get in on the action? Head to [https://xepl.tech](https://xepl.tech).
+Careful now ... going off processor exposes you to unauthorized observation and release of information to tricksters.
 
-Now, how about you say goodbye to that day job? Trust me, they don't appreciate your mad skills, and you're over the old stuff anyway. A word of caution, though: Your company might not be a fan of the license, so peek at that employee agreement, will ya?
+![Penetration Testing](https://xepl.net/images/yesterday/DALL·E%202024-02-27%2007.55.26.jpg)
 
-When you contribute to XEPL, you keep your intellectual property. Share it with the XEPL community, and together, let's build something phenomenal.
+It's endless ... they will never stop.
 
-Again, jump into the conversation at [https://xepl.tech](https://xepl.tech).
+![At every door, in every window](https://xepl.net/images/yesterday/DALL·E%202024-02-27%2007.58.30.jpg)
 
-Joining the XEPL technology community places you right in the thick of things, shaping the software's developmental arc. I'm totally convinced that our combined talents will churn out top-notch end-products. We'll kick the billion-line-code madness to the curb and create a win-win for everyone.
+## XEPL is better.
 
-### Share Ideas, Build Connections
+![](https://xepl.net/images/dna_cortex/DALL·E%202024-04-24%2013.01.14.jpg)
 
-Contributors, you're what's going to make XEPL kick major butt in the long run. By getting involved, you're part of a massive shift aimed at totally reinventing the software game for profit.
+XEPL is in-process, in-memory, fully secure, multi-core magic.
 
-Now, don't get it twisted—contributing to XEPL isn't just about slinging code. The knowledge you bring to the table? That's the secret sauce. Blog posts, tutorials, or just throwing in some two cents, it all makes the XEPL ecosystem a heck of a lot stronger. So cheers to you for making this a dynamic, robust community.
 
-Thanks, you're awesome.
-
-### Get in the XEPL Ring
-
-XEPL isn't just some code—it's a full-blown movement. We're not just creating software; we're gathering a tribe of people who know they can change the game, one contribution at a time. We're also making real-world connections that outlast the project itself. The code's just the starting line; it's the community that's the real firepower here.
-
-# The Genesis of XEPL
-
-For over two decades, I've been a lone wolf developer pouring my soul into XEPL. My focus may have wavered occasionally, but ultimately, I zeroed in on one ambitious venture. What emerged is computer science expressed as a heady blend of neuroscience, multi-threading, and recursion. The result? An elegantly self-actuating, recursive XML structure. Hold onto your hats, it's all contained in fewer than 20,000 lines of code, with a maximum complexity of 19 and an average complexity of just 2.
-
-> Doing the math? That's fewer than 1000 lines of C++ per year. Each line is optimized for peak efficiency!
-
-Here's the deal: XEPL isn't just another software—it's a game-changer. Say goodbye to the bloated, clunky programs of yesteryears. With XEPL, the future of streamlined, efficient software is happening right now. Leaner, faster, and more resilient against those irksome vulnerabilities.
-
-# The Final Word: The DAZL-1.0 License and XEPL's Future
-
-DAZZLE alert! XEPL rocks a brand-new, source-available license: DAZL-1.0. The why is simple: to make sure future project mavericks like you can get paid for your smarts. This license tackles the free-for-all commercial abuse of today's open-source scene, while preserving the bedrock principle of open-source: keep the source code in the public domain!
-
-The DAZL license is poised to catch fire. Though many projects will undoubtedly be spin-offs of XEPL, DAZL is also an option for fresh, grassroots initiatives.
-
-Here's the kicker: If you've got a vision but don't know how to realize it, XEPL is already here, getting better every second.
-
-- For high-quality discussions, make a beeline to [XEPL.Tech](https://xepl.tech).
-- For licenses and premium support, it's [XEPL.Services](https://xepl.services) for you.
-- Craving some iconic swag? Head over to [XEPL.Shop](https://xepl.shop).
-
-Welcome to the XEPL revolution.
