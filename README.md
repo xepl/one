@@ -16,13 +16,21 @@ Just as simple as compiling Hello, World!
 
 Be sure that you have a C++ Compiler. XEPL uses C++17.
 
-``g++ -std=c++17 intro.cpp``
+`mkdir xepl`
 
-and run
+`cd xepl`
 
-``./a.out``
+`git clone https://github.com/xepl/one.git one`
 
-## XEPL is Smart
+`git clone https://github.com/xepl/solo.git solo`
+
+`cd solo`
+
+`g++ -std=c++17 *.cpp`
+
+`./a.out`
+
+# XEPL is Smart
 
 Real-time C++ has always been challenged by new/delete.
 

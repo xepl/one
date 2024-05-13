@@ -49,27 +49,7 @@ Recycler / NoCopy
   ParserBag - RnaBag : XmlBag
   String - ErrorReport
 */
-/* File Guide:
-     0 - XEPL Architecture and Classes
-  1500 - The XEPL Implementation of Classes
-      Allocators:  Overload new/delete, MemoryCounts
-      Recycler:    Backpack, Recycler, HeapOfPools, PoolOfBlocks, RecycleCounts
-      Threading:   Mutex, MutexScope, Thread, Semaphore
-      Strings:     String Tools, String, ErrorReport
-      Processing:  Atom, Cell, Gene, Nucleus, Neuron, Rendon, Senson, Lobe
-      Connections: Axon, Synapse, Receptor, Relay
-      Signals:     Spike, Rendezvous
-      Actions:     Action, SignalAction, DropAction, ActionList
-      Temporaries: Ephemerals, ShortTerms, StableGenes, StableTraits
-      Parsing:     Script, XmlParser, XmlBuilder
-  7550 - Solo Kits for Web Server
-      Kits:       Html, Http, Sockets
-      Config:     Keywords, Operators, Files
- 10500 - OS Configuration for Posix
-      Posix:      Sockets
- 11300
-       Main and ErrorReport - catchall
-*/
+
 #include <atomic>
 #include <condition_variable>
 #include <mutex>

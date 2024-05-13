@@ -30,7 +30,7 @@ void XEPL::Set_Thread_Name ( XEPL::Thread*, Text*  _name )
 #elif __linux__
 void XEPL::Set_Thread_Name ( XEPL::Thread* _thread, Text*  _name )
 {
-	pthread_setname_np ( _thread->std_thread, _name );
+//	pthread_setname_np ( _thread->std_thread->native_handle(), _name );
 }
 #else
 void XEPL::Set_Thread_Name ( XEPL::Thread* _thread, Text*  _name )
