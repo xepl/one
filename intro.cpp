@@ -1,14 +1,20 @@
 #include "xepl.cc"
 #include "xepl_defaults.hpp"
-
 #include "xepl_string_tools.hpp"
-#include "xepl_file_kit.hpp"
-#include "xepl_cli_kit.hpp"
-#include "xepl_keyword_kit.hpp"
-#include "xepl_operator_kit.hpp"
-#include "xepl_splicer_kit.hpp"
 
-#include "xepl_timer_kit.hpp"
+#include "../kits/xepl_file_kit.hpp"
+#include "../kits/xepl_cli_kit.hpp"
+#include "../kits/xepl_keyword_kit.hpp"
+#include "../kits/xepl_operator_kit.hpp"
+#include "../kits/xepl_splicer_kit.hpp"
+#include "../kits/xepl_timer_kit.hpp"
+
+
+bool XEPL::Show_Trace          = false;
+bool XEPL::Show_Memory_Counts  = true;
+bool XEPL::Show_Counters       = false;
+
+
 
 int main ( int, char**, char** )
 {
