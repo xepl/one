@@ -5702,9 +5702,5 @@ void XEPL::xeplCantFind ( Text* _type, Nucleus* _nucleus, Text* _name )
 	error_message.append(_type).append(": ").append(temp).append(_name);
 }
 
-bool XEPL::Show_Trace          = false;
-bool XEPL::Show_Memory_Counts  = true;
-bool XEPL::Show_Counters       = false;
-
 thread_local XEPL::Lobe* XEPL::tlsLobe = nullptr;
 std::mutex   XEPL::output_lock;
