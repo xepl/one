@@ -2,17 +2,12 @@
 #include "xepl_defaults.hpp"
 #include "xepl_string_tools.hpp"
 
-#include "../kits/xepl_file_kit.hpp"
-#include "../kits/xepl_cli_kit.hpp"
-#include "../kits/xepl_keyword_kit.hpp"
-#include "../kits/xepl_operator_kit.hpp"
-#include "../kits/xepl_splicer_kit.hpp"
-#include "../kits/xepl_timer_kit.hpp"
+#include "../kits/xepl_all_kits.cc"
 
 
-bool XEPL::Show_Trace          = false;
+bool XEPL::Show_Trace          = true;
 bool XEPL::Show_Memory_Counts  = true;
-bool XEPL::Show_Counters       = false;
+bool XEPL::Show_Counters       = true;
 
 
 

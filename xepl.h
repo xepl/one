@@ -50,6 +50,8 @@ Recycler / NoCopy
   String - ErrorReport
 */
 
+#pragma once
+
 #include <atomic>
 #include <condition_variable>
 #include <mutex>
@@ -868,7 +870,7 @@ namespace XEPL
 		void     Markup ( Nucleus* using_cell,   Gene* using_form, String* add_to_string );
 		explicit Rendon ( Neuron*  render_host,  Gene* using_form, String* add_to_string );
 		~Rendon () override;
-public:
+	public:
 		String*  rendition;
 		Rendon*  was_rendon;
 		virtual void Rendon_Render ( Nucleus* render_cell, Gene* using_form );
