@@ -3,13 +3,11 @@
 #include "xepl_string_tools.hpp"
 
 #include "../kits/xepl_all_kits.cc"
-
+#include "../kits/PerformanceTimer.hpp"
 
 bool XEPL::Show_Trace          = true;
 bool XEPL::Show_Memory_Counts  = true;
 bool XEPL::Show_Counters       = true;
-
-
 
 int main ( int, char**, char** )
 {
@@ -22,6 +20,7 @@ int main ( int, char**, char** )
 			KITS::OPERATORS::Register_Operator_Kit  ( &cortex );
 			KITS::KEYWORDS::Register_Keyword_Kit    ( &cortex );
 			KITS::SPLICERS::Register_Splicer_Kit    ( &cortex );
+			KITS::TIMER::Register_Performance_Kit   ( &cortex );
 
 			cortex.Register_Command ( "Trace",     [] ( XEPL::String* _opt ) { XEPL::Show_Trace          = _opt->compare("off"); });
 			cortex.Register_Command ( "Counters",  [] ( XEPL::String* _opt ) { XEPL::Show_Counters       = _opt->compare("off"); });
