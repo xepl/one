@@ -1413,6 +1413,8 @@ namespace XEPL
 		bool  Did_Dot_Tag         ( Nucleus* host_cell, Gene* call_tag );
 		bool  Did_Render          ( Nucleus* host_cell, Gene* call_tag,  Rendon* );
 		bool  Did_Operator        ( Cord* operator_name, Script* active_script, Cord* parameter );
+		bool  Execute_As_Xml      ( Text* _chars );
+		bool  Execute_As_Rna      ( Text* _chars, String* = nullptr );
 		static Gene*   Locate_Gene   ( Nucleus* starting_at,  Cord* gene_name  );
 		static Neuron* Locate_Neuron ( Nucleus* starting_at,  Cord* neuron_name, char separator );
 		static Axon*   Locate_Axon   ( Nucleus* starting_at,  Cord* axon_name,   char separator );

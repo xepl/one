@@ -1,13 +1,7 @@
-#include "xepl.cc"
-#include "xepl_defaults.hpp"
-#include "xepl_string_tools.hpp"
+#include "xepl.hpp"
 
 #include "../kits/xepl_all_kits.cc"
 #include "../kits/PerformanceTimer.hpp"
-
-bool XEPL::Show_Trace          = true;
-bool XEPL::Show_Memory_Counts  = true;
-bool XEPL::Show_Counters       = true;
 
 int main ( int, char**, char** )
 {

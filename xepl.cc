@@ -1034,6 +1034,35 @@ bool XEPL::Cortex::Did_Operator ( Cord* _operator_name, Script* _script, Cord* _
 	return true;
 }
 
+
+bool XEPL::Cortex::Execute_As_Xml ( XEPL::Text* _chars )
+{
+	XEPL::Gene* gene = new XEPL::Gene ( _chars );
+
+	XEPL::ShortTerms nesting ( gene );
+
+	if ( !XEPL::tlsLobe->Process_Gene ( gene ) )
+		XEPL::xeplCantFind ( "Cmd", XEPL::tlsLobe, gene->cell_name );
+
+	gene->Release();
+
+	return true;
+}
+
+bool XEPL::Cortex::Execute_As_Rna ( XEPL::Text* _chars, XEPL::String* _result_string )
+{
+	XEPL::Cord   rna_cord ( _chars );
+
+	XEPL::ShortTerms nesting;
+
+	auto lobe = XEPL::tlsLobe;
+
+	XEPL::Script ( lobe, lobe->index_link, &rna_cord, _result_string );
+
+	return true;
+}
+
+
 void XEPL::Cortex::Register_Render ( Text* _chars, Render _render )
 {
 	Cord name_cord(_chars);
